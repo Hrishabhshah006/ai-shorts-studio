@@ -5,13 +5,13 @@ services:
       POSTGRES_DB: shorts
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-    ports: ["5432:5432"]
+    ports: ["5433:5432"]
     volumes: [postgres_data:/var/lib/postgresql/data]
 
   temporal:
     image: temporalio/auto-setup:latest
     environment:
-      DB: postgresql
+      DB: postgres12
       DB_PORT: 5432
       POSTGRES_USER: postgres
       POSTGRES_PWD: postgres
