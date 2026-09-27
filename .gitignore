@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Media
+data/
+*.mp4
+*.webm
+*.wav
+*.mp3
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
